@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+  gap: 50px;
+  padding: 20px;
+}
+
+.gridItem img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+

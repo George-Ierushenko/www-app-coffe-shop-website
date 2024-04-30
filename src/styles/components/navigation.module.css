@@ -1,0 +1,84 @@
+.navList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  margin: 0;
+  height: 120px;
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+}
+
+.navItems {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  background-image: url('../../../public/logo.webp');
+  background-position: center;
+  background-size: 80px 80px;
+}
+
+.navItem {
+  margin: 10px;
+}
+
+.navLink {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  padding: 6px 0;
+  color: #595959;
+  vertical-align: middle;
+}
+
+.navLink:hover,
+.activeLink {
+  color: purple;
+}
+
+.languageSelector {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 0;
+  margin-right: 20px;
+}
+
+.languageButton {
+  padding: 5px;
+  padding-bottom: 1px;
+  margin: 0 5px;
+  background-color: transparent;
+  color: #595959;
+  height: 40px;
+
+  border: none;
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+.languageButton:hover {
+  color: purple;
+}
+
+.languageButton.active {
+  font-weight: bold;
+  border-bottom: 2px solid purple;
+}

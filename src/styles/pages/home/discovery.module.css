@@ -1,0 +1,68 @@
+.discoverSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+  padding: 0 10%;
+  height: 80vh;
+}
+
+.textContent {
+  max-width: 50%;
+}
+
+.title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+.touchButton {
+  background-color: #563d7c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.touchButton:hover {
+  background-color: darken(#563d7c, 10%);
+}
+
+.imageContent {
+  max-width: 45%;
+}
+
+.coffeeImage {
+  height: 500px;
+
+  display: block;
+
+  aspect-ratio: 3/4;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../../../public/coffe-machine.jpeg');
+}
+
+@media (max-width: 768px) {
+  .discoverSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContent, .imageContent {
+    max-width: 100%;
+  }
+
+  .coffeeImage {
+    margin-top: 20px;
+  }
+}

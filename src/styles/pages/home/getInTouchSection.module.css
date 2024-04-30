@@ -1,0 +1,96 @@
+/* src/components/GetInTouchSection.module.css */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 50px;
+
+}
+
+.formContainer, .infoContainer {
+  flex: 1;
+}
+
+.infoContainer {
+  background-color: #f5f5f5;
+}
+
+.wrapper {
+  margin: 20px;
+}
+
+.heading, .contactInfoHeading {
+  margin-top: 0;
+}
+
+.introText, form {
+  margin-bottom: 20px;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm input[type="tel"],
+.contactForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactForm textarea {
+  resize: vertical;
+}
+
+.contactForm textarea {
+  height: 100px;
+}
+
+.submitButton {
+  background-color: #563d7c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.submitButton:hover {
+  background-color: darken(#563d7c, 10%);
+}
+
+.hoursList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 70%;
+  justify-content: space-between;
+
+  .hour {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.googleMap {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .formContainer, .infoContainer {
+    width: 100%;
+  }
+}
